@@ -69,29 +69,29 @@ class AboutOperators(Koan):
 
         Comparaison operator always return a Boolean (True/False)
         """
-        #change the value of the variable number
+        #change the value of the variable 'number'
         number = 53
-        self.assertTrue(number == 3)
+        self.assertTrue(number == __)
 
         #change the value of the variable number
         number = 3
-        self.assertTrue(number != 3)
+        self.assertTrue(number != __)
 
         #change the value of the variable number
         number = 53
-        self.assertTrue(number < 3)
+        self.assertTrue(number < __)
 
         #change the value of the variable number
         number = 53
-        self.assertTrue(number <= 3)
+        self.assertTrue(number <= __)
 
         #change the value of the variable number
         number = 2
-        self.assertTrue(number >= 3)
+        self.assertTrue(number >= __)
 
         #change the value of the variable number
         number = 2
-        self.assertTrue(number > 3)
+        self.assertTrue(number > __)
 
 
     def test_membership_operators(self):
@@ -103,15 +103,11 @@ class AboutOperators(Koan):
         """
         #change the value of the variable university
         university = 'Morisset'
-        self.assertTrue('library' in university )
-
-        #change the value of the variable countries
-        countries = ['USA', 'Nepal', 'Albany']
-        self.assertTrue('Canada' in countries)
+        self.assertTrue('e' in university )
 
         #change the value of the variable greeting
         greeting = 'hello world'
-        self.assertTrue('hello' not in greeting)
+        self.assertTrue('e' not in greeting)
 
     def test_identity_operators(self):
         """
@@ -128,21 +124,21 @@ class AboutOperators(Koan):
         course = "Geography"
 
         my_program = __
-        self.assertTrue(__ is course)
+        self.assertTrue(my_program is course)
 
     def test_priority_of_operators(self):
         """
         Test operator precedence
         """
         #change the value of the variable 'athlete'
-        athlete = True
-        self.assertTrue(False is athlete)
+        athlete = False
+        self.assertTrue(athlete is __)
 
 
         statement = False is False is False
         #replace 0 by the value of the variable 'statement'
-        self.assertTrue(0)
+        self.assertTrue(__)
 
         statement_2 = (False is False) is False
         #replace 1 by the value of the variable 'statement'
-        self.assertFalse(1)
+        self.assertFalse(__)
